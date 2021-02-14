@@ -1,12 +1,10 @@
 package academy.belhard;
 
 public abstract class Figure {
-    protected double a;
-    protected double b;
+    protected int sideCounter;
 
-    public Figure(double a, double b) {
-      this.a=a;
-      this.b=b;
-    }
+    public Figure(int sideCounter) {
+      this.sideCounter=sideCounter;
+          }
 
 }

@@ -1,11 +1,11 @@
 package academy.belhard;
 
-public class Rectangle extends Figure implements AreaCalculator, PerimeterCalculator {
+public class Triangle extends Figure implements AreaCalculator, PerimeterCalculator {
     protected double a;
     protected double b;
     private final String NAME_OF_FIGURE="Четырехугольник";
 
-    public Rectangle(int sideCounter, double a, double b) {
+    public Triangle (int sideCounter, double a, double b) {
         super(sideCounter);
         this.a = a;
         this.b = b;
@@ -13,7 +13,7 @@ public class Rectangle extends Figure implements AreaCalculator, PerimeterCalcul
 
     @Override
     public double calculateArea() {
-        return a*b;
+        return (a*b)/2;
     }
 
 
