@@ -41,10 +41,10 @@ public class Rectangle extends Figure implements AreaCalculator, PerimeterCalcul
     public String toString() {
         return '{'+
                 NAME_OF_FIGURE +
-                "  1 сторона=" + a +
-                ", 2 сторона=" + b +
-                ", площадь=" + calculateArea() +
-                ", периметр=" + calculatePerimeter() +
+                "  1 сторона = " + a +
+                ", 2 сторона = " + b +
+                ", площадь = " + String.format("%.2f",calculateArea()) +
+                ", периметр = " + String.format("%.2f",calculatePerimeter()) +
                 '}';
     }
 }

@@ -41,10 +41,10 @@ public class Triangle extends Figure implements AreaCalculator, PerimeterCalcula
     public String toString() {
         return '{'+
                 NAME_OF_FIGURE +
-                "  1 катет=" + a +
-                ", 2 катет=" + b +
-                ", площадь=" + calculateArea() +
-                ", периметр=" + calculatePerimeter() +
+                "  1 катет = " + a +
+                ", 2 катет = " + b +
+                ", площадь = " + String.format("%.2f",calculateArea()) +
+                ", периметр = " + String.format("%.2f",calculatePerimeter()) +
                 '}';
     }
 }

@@ -18,7 +18,7 @@ public class Circle extends Figure implements AreaCalculator, PerimeterCalculato
 
     @Override
     public double calculateArea() {
-        return Math.PI*r*r;
+        return Math.PI*Math.pow(r,2);
     }
 
 
@@ -31,9 +31,9 @@ public class Circle extends Figure implements AreaCalculator, PerimeterCalculato
     public String toString() {
         return '{'+
                 NAME_OF_FIGURE +
-                "  радиус=" + r +
-                ", площадь=" + calculateArea() +
-                ", периметр=" + calculatePerimeter() +
+                "  радиус = " + r +
+                ", площадь = " + String.format("%.2f",calculateArea()) +
+                ", периметр = " + String.format("%.2f",calculatePerimeter()) +
                 '}';
     }
 }

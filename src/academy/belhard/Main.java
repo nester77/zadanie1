@@ -8,9 +8,15 @@ public class Main {
         Figure figure3 = new Rectangle(2,5);
 
 
-        figure1.printInfo();
-        figure2.printInfo();
-        figure3.printInfo();
+        printInfoFigure(figure1);
+        printInfoFigure(figure2);
+        printInfoFigure(figure3);
+
 
     }
+    
+    public static void printInfoFigure(Figure figure) {
+         System.out.println(figure.toString());
+    }
+
 }
