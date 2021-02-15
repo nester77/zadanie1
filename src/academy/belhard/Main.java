@@ -14,9 +14,9 @@ public class Main {
 
 
     }
-    
+
     public static void printInfoFigure(Figure figure) {
-         System.out.println(figure.toString());
+         System.out.println(figure);
     }
 
 }
