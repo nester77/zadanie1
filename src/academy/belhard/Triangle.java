@@ -1,8 +1,8 @@
 package academy.belhard;
 
 public class Triangle extends Figure implements AreaCalculator, PerimeterCalculator {
-    protected double a;
-    protected double b;
+    private double a;
+    private double b;
     private final String NAME_OF_FIGURE="Прямоугольный треугольник";
 
     public Triangle ( double a, double b) {
